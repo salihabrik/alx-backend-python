@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
-from typing import Callable
+""" Complex types - functions"""
+from typing import Callable, Iterator, Union, Optional, List, Tuple
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
     """
-    Return a function that multiplies a float by the given multiplier.
+    takes a float multiplier as argument,
+    returns a function that multiplies a float by multiplier.
     """
-    def multiplier_function(x: float) -> float:
-        return x * multiplier
-    return multiplier_function
+    def f(n: float) -> float:
+        """ multiplies a float by multiplier """
+        return float(n * multiplier)
+
+    return f
