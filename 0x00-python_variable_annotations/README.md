@@ -22,4 +22,4 @@ python script_name.py
 ![Alt text](image.png)
 
 License
-MIT
+MIT#!/usr/bin/env python3
