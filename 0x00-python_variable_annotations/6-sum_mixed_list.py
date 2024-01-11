@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 """
-Module with a type-annotated function sum_mixed_list.
+Module with a type-annotated function make_multiplier.
 """
 
 
-from typing import List, Union
+from typing import Callable
 
 
-def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
+def make_multiplier(multiplier: float) -> Callable[[float], float]:
     """
-    Function that takes a list of integers and floats and returns sums
+    Return a function that multiplies a float by the given multiplier.
     """
-    return sum(mxd_lst)
+    def multiplier_function(x: float) -> float:
+        return x * multiplier
+    return multiplier_function
+
