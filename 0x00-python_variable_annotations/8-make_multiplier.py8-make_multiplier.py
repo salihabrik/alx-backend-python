@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Module with a type-annotated function make_multiplier.
+This module contains the function make_multiplier.
 """
 
 
@@ -8,11 +8,12 @@ from typing import Callable
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
+    
+    
     """
-    Function that takes a float multiplier as an argument and returns a function
-    that multiplies a float by the multiplier.
+    Takes a float multiplier as argument and returns a function that multiplies a float by multiplier.
     """
-    def multiplier_function(x: float) -> float:
-        return x * multiplier
+    def multiplier_func(n: float) -> float:
+        return n * multiplier
+    return multiplier_func
 
-    return multiplier_function
