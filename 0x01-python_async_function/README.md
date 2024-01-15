@@ -13,13 +13,6 @@ This project involves writing asynchronous coroutines in Python using the `async
 
 Run the Python scripts from the command line as follows:
 
-```bash
-python3 0-basic_async_syntax.py
-python3 1-concurrent_coroutines.py
-
-Sure, here's a basic `README.md` for your task:
-
-```markdown
 # Concurrent Coroutines in Python
 
 This project involves writing asynchronous coroutines in Python using the `asyncio` library. The main task is to create a coroutine `wait_n` that spawns another coroutine `wait_random` multiple times and returns the results in ascending order.
@@ -44,7 +37,7 @@ python3 1-concurrent_coroutines.py
 - Ubuntu 18.04 LTS
 
 ## Author
-
-[salihabrik](https://github.com/salihabrik)
 ```
+[salihabrik](https://github.com/salihabrik)
+
 
