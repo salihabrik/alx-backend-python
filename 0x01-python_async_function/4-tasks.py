@@ -14,5 +14,6 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
     The list of delays is sorted (in ascending order).
     """
     tasks = [task_wait_random(max_delay) for _ in range(n)]
-    completed, pending = await asyncio.wait(tasks, return_when=asyncio.ALL_COMPLETED)
+    completed, pending = await asyncio.wait(tasks,
+            return_when=asyncio.ALL_COMPLETED)
     return [task.result() for task in completed]
