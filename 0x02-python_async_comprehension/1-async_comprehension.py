@@ -5,8 +5,6 @@ Module documentation goes here
 
 import asyncio
 from typing import List
-from itertools import islice
-
 async_generator = __import__('0-async_generator').async_generator
 
 
